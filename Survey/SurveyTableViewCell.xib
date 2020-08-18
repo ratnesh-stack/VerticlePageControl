@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SurveyTableViewCell" rowHeight="249" id="KGk-i7-Jjw" customClass="SurveyTableViewCell" customModule="RatneshTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="320"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="319.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UI" translatesAutoresizingMaskIntoConstraints="NO" id="rsq-9l-2c9">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="319.5"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LgJ-Jh-p41">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="128"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ElJ-e7-DXx">
+                                <rect key="frame" x="0.0" y="69.5" width="180" height="38.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3e-vT-YFx">
+                                        <rect key="frame" x="68.5" y="0.0" width="43.5" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9K-G4-55n">
+                                        <rect key="frame" x="75" y="23" width="30.5" height="15.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ElJ-e7-DXx" secondAttribute="trailing" id="92v-tg-nog"/>
+                            <constraint firstAttribute="bottom" secondItem="ElJ-e7-DXx" secondAttribute="bottom" constant="20" symbolic="YES" id="IbE-7S-lWQ"/>
+                            <constraint firstItem="ElJ-e7-DXx" firstAttribute="height" secondItem="LgJ-Jh-p41" secondAttribute="height" multiplier="0.3" id="VjA-Sz-b7D"/>
+                            <constraint firstItem="ElJ-e7-DXx" firstAttribute="centerX" secondItem="LgJ-Jh-p41" secondAttribute="centerX" id="dhO-Eo-1ib"/>
+                            <constraint firstItem="ElJ-e7-DXx" firstAttribute="leading" secondItem="LgJ-Jh-p41" secondAttribute="leading" id="eK5-me-PBu"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKO-11-oRn">
+                        <rect key="frame" x="27" y="260" width="126" height="29"/>
+                        <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <state key="normal" title="Take the survey">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LgJ-Jh-p41" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9Ir-ca-vpX"/>
+                    <constraint firstAttribute="trailing" secondItem="LgJ-Jh-p41" secondAttribute="trailing" id="COT-hG-PJN"/>
+                    <constraint firstItem="LgJ-Jh-p41" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="J1h-gP-bXM"/>
+                    <constraint firstItem="rsq-9l-2c9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="J3h-vl-4Ye"/>
+                    <constraint firstItem="rsq-9l-2c9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="LrG-8d-snd"/>
+                    <constraint firstAttribute="bottom" secondItem="rsq-9l-2c9" secondAttribute="bottom" id="R62-6V-vWt"/>
+                    <constraint firstItem="BKO-11-oRn" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="XB6-nw-KM0"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="BKO-11-oRn" secondAttribute="bottom" constant="20" id="i5S-8V-Pyp"/>
+                    <constraint firstItem="LgJ-Jh-p41" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.4" id="j5J-FI-53n"/>
+                    <constraint firstItem="BKO-11-oRn" firstAttribute="width" secondItem="rsq-9l-2c9" secondAttribute="width" multiplier="0.7" id="mVN-9e-xUQ"/>
+                    <constraint firstAttribute="trailing" secondItem="rsq-9l-2c9" secondAttribute="trailing" id="raI-kh-9DV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backgroundImageView" destination="rsq-9l-2c9" id="hMl-SC-Av8"/>
+                <outlet property="subtitleLable" destination="W9K-G4-55n" id="9bM-sh-Wi6"/>
+                <outlet property="takeSurveyButton" destination="BKO-11-oRn" id="pTv-4C-UfR"/>
+                <outlet property="titleLable" destination="z3e-vT-YFx" id="acq-iu-JHr"/>
+            </connections>
+            <point key="canvasLocation" x="118.84057971014494" y="209.59821428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="UI" width="16" height="16"/>
+    </resources>
+</document>
